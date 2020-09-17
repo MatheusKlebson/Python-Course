@@ -2,4 +2,4 @@
 # mostre seu novo preço, com 5% de desconto.
 produto = float(input("Preço do produto:R$"))
 novo = produto - (produto*5/100)
-print("O novo preço será de",novo,"R$")
+print("O novo preço será de",novo,"R$")1

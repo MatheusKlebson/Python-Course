@@ -10,4 +10,4 @@ print(num,"X",6,"=",num*6)
 print(num,"X",7,"=",num*7)
 print(num,"X",8,"=",num*8)
 print(num,"X",9,"=",num*9)
-print(num,"X",10,"=",num*10)
+print(num,"X",10,"=",num*10)8
