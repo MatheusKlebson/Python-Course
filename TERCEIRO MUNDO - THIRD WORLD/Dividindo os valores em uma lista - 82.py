@@ -19,5 +19,5 @@ while True:
     if opção == "N":
         break
 print(f"Lista: {lista}")
-print(f"Lista pares: {pares}")
-print(f"Lista impares: {impares}")
+print(f"Lista dos pares: {pares}")
+print(f"Lista dos ímpares: {impares}")
