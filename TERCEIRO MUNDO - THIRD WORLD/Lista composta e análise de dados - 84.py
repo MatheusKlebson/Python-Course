@@ -3,28 +3,33 @@
 # A) Quantas pessoas foram cadastradas.                                                                                                                
 # B) Uma listagem com as pessoas mais pesadas.                                                                                                    
 # C) Uma listagem com as pessoas mais leves.
-lista = []
+dados = []
 pessoas = []
-pesado = 0
-leve = 0
-
+pesado = leve = 0
 while True:
-    lista.append(str(input("Nome da pessoa: ")))
-    lista.append(float(input("Peso da pessoa(KG): ")))
+    dados.append(str(input("Nome: ")))
+    dados.append(float(input("Peso: ")))
     if len(pessoas) == 0:
-        pesado = lista[1]
-        leve = lista[1]
+        leve = dados[1]
+        pesado = dados[1]
     else:
-        if pesado < lista[1]:
-            pesado = lista[1]
-        if leve > lista[1]:
-            leve = lista[1]
-    pessoas.append(lista[:])
-    pessoas.clear()
+        if leve > dados[1]:
+            leve = dados[1]
+        if pesado < dados[1]:
+            pesado = dados[1]
+    pessoas.append(dados[:])
+    dados.clear()
     opção = " "
     while not opção in "SN":
         opção = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     if opção == "N":
         break
-print(f"Total cadastrados: {len(pessoas)}")
-print(leve,pesado)
+print(f"Total cadastrados foram: {len(pessoas)}")
+print(f"Maior peso: {pesado}KG - ",end="")
+for p in pessoas:
+    if p[1] == pesado:
+        print(f"[{p[0]}]",end="")
+print(f"\nMenor peso: {leve}KG - ",end="")
+for p in pessoas:
+    if p[1] == leve:
+        print(f"[{p[0]}]",end="")
