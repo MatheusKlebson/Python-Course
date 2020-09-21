@@ -3,15 +3,15 @@
 numbers = []
 for accountant in range(0,5):
   num = int(input(f"Write a number: "))
-  if accountant == 0 or num >= numbers[-1]:
+  if accountant == 0 or num > numbers[-1]:
     numbers.append(num)
     print(f"The number placed in the last position in the list...")
   else:
     position = 0
     while position < len(numbers):
-      if num <= numbers[accountant]:
+      if num <= numbers[position]:
         numbers.insert(position,num)
         print(f"The number placed in the {position} position in the list...")
         break
-    position += 1
-print(numbers)
+      position += 1
+print(f"List create: {numbers}")
