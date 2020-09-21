@@ -3,6 +3,7 @@
 numbers = []
 for accountant in range(0,5):
   num = int(input(f"Write a number: "))
-  if accountant == 0 or num <= numbers[-1]:
+  if accountant == 0 or num >= numbers[-1]:
     numbers.append(num)
-    print(f"The number set in last position in list")
+    print(f"The number placed in the last position in the list...")
+print(numbers)
