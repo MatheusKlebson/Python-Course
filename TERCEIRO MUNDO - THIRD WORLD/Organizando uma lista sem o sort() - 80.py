@@ -11,6 +11,7 @@ for accountant in range(0,5):
     while position < len(numbers):
       if num <= numbers[accountant]:
         numbers.insert(position,num)
-        print(f"The number placed in the {num} position in the list...")
+        print(f"The number placed in the {position} position in the list...")
+        break
     position += 1
 print(numbers)
