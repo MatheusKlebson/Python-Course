@@ -9,6 +9,8 @@ for linha in range(0,3):
         matriz[linha][coluna] = int(input(f"Digite o valor [{linha},{coluna}]: "))
         if matriz[linha][coluna] % 2 == 0:
             somapares += matriz[linha][coluna]
+        if matriz[linha][2]:
+            soma3coluna += matriz[linha][2]
 print("="*30)
 print("{:^30}".format("MATRIZ FORMADA"))
 print("="*30)
@@ -19,4 +21,5 @@ for l in range(0,3):
 print("="*30)
 print("{:^30}".format("RESULTADOS"))
 print("="*30)
-print(f"Soma dos pares: {somapares}")   
+print(f"Soma dos pares: {somapares}")
+print(f"Soma de todos da terceira coluna: {soma3coluna}")
