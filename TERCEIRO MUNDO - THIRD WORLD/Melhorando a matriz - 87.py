@@ -11,6 +11,12 @@ for linha in range(0,3):
             somapares += matriz[linha][coluna]
         if matriz[linha][2]:
             soma3coluna += matriz[linha][2]
+for cont in range(0,3):
+    if cont == 0:
+        maior2linha = matriz[1][cont]
+    else:
+        if matriz[1][cont] > maior2linha:
+            maior2linha = matriz[1][cont]
 print("="*30)
 print("{:^30}".format("MATRIZ FORMADA"))
 print("="*30)
@@ -23,3 +29,4 @@ print("{:^30}".format("RESULTADOS"))
 print("="*30)
 print(f"Soma dos pares: {somapares}")
 print(f"Soma de todos da terceira coluna: {soma3coluna}")
+print(f"Maior da segunda coluna: {maior2linha}")
