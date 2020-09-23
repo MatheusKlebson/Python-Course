@@ -21,4 +21,6 @@ while tot < totjogos:
     jogos.append(lista[:])
     lista.clear()
     tot += 1
-print(jogos)
+print("="*30)
+for indice, jogo in enumerate(jogos):
+    print(f"JOGO {indice}: {jogo}")
