@@ -19,3 +19,6 @@ print(f"{'NUM':^5}{'NOME':>10}{'MÉDIA':>12}")
 print("="*30)
 for indice, aluno in enumerate(lista):
     print(f"{indice:^5}{aluno[0]:>11}{aluno[2]:>10}")
+print("="*30)
+opc = int(input('''Coloque a númeração do aluno que você deseja ver as notas,
+(999 termina o programa) Digite: '''))
