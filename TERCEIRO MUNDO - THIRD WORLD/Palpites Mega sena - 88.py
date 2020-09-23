@@ -2,6 +2,7 @@
 # criar palpites.O programa vai perguntar quantos jogos serão gerados 
 # vai sortear 6 números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.
 from random import randint
+from time import sleep
 lista = []
 jogos = []
 print("="*30)
@@ -23,4 +24,5 @@ while tot < totjogos:
     tot += 1
 print("="*30)
 for indice, jogo in enumerate(jogos):
-    print(f"JOGO {indice}: {jogo}")
+    print(f"JOGO {indice + 1}: {jogo}")
+    sleep(1)
