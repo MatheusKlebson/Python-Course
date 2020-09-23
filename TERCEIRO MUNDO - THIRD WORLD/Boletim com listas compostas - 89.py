@@ -20,13 +20,15 @@ print("="*30)
 for indice, aluno in enumerate(lista):
     print(f"{indice:^5}{aluno[0]:>11}{aluno[2]:>10}")
 while True:
+    print("="*60)
     opc = int(input('''Coloque a númeração do aluno que você deseja ver as notas,
 (999 termina o programa) Digite: '''))
+    print("="*60)
     if opc < len(lista):
         print(f"A notas do aluno {lista[opc][0]} são: {lista[opc][1]}")
     if opc == 999:
         break
     elif opc >= len(lista):
         print("Aluno digitado não existe")
-print("="*30)
+
 print("PROGRAMA FINALIZADO")
