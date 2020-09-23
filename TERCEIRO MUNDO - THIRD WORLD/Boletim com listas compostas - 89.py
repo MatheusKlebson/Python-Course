@@ -18,4 +18,4 @@ print("="*30)
 print(f"{'NUM':^5}{'NOME':>10}{'MÉDIA':>12}")
 print("="*30)
 for indice, aluno in enumerate(lista):
-    print(f"{indice:^5}{aluno[0]:>10}{aluno[2]:>12}")
+    print(f"{indice:^5}{aluno[0]:>11}{aluno[2]:>10}")
