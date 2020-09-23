@@ -3,6 +3,9 @@
 #   No final, mostre um boletim contendo a média de cada um 
 #   permita que o usuário possa mostrar as notas de cada aluno individualmente.
 lista = []
+print("="*30)
+print("{:^30}".format("BOLETIM DE ALUNOS"))
+print("="*30)
 while True:
     nome = str(input("Digite o nome do aluno: ")).strip().title()
     nota1 = float(input("Digite a primeira nota: "))
@@ -30,5 +33,4 @@ while True:
         break
     elif opc >= len(lista):
         print("Aluno digitado não existe")
-
-print("PROGRAMA FINALIZADO")
+print("{:^60}".format('PROGRAMA FINALIZADO'))
