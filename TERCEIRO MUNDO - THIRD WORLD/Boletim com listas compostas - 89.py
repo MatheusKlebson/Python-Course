@@ -3,7 +3,7 @@
 #   No final, mostre um boletim contendo a média de cada um 
 #   permita que o usuário possa mostrar as notas de cada aluno individualmente.
 lista = []
-while True:
+'''while True:
     nome = str(input("Digite o nome do aluno: ")).strip().title()
     nota1 = float(input("Digite a primeira nota: "))
     nota2 = float(input("Digite a segunda nota: "))
@@ -13,6 +13,8 @@ while True:
     while not opção in "SN":
         opção = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     if opção == "N":
-        break
-
+        break'''
+print("="*30)
+print(f"{'NUM':^5}{'NOME':>10}{'MÉDIA':>12}")
+print("="*30)
 print(lista)
