@@ -40,6 +40,7 @@ Módulos
 - [ ] 6 - Tratamento de Erros em Python
 
 Nota no teste final: Ainda não foi feito
+
 ---
 PYTHON COURSE STEPS
  - [x] World 1 Modules (Fundamentals)
