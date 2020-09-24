@@ -40,7 +40,7 @@ Módulos
 - [ ] 6 - Tratamento de Erros em Python
 
 Nota no teste final: Ainda não foi feito
-
+---
 PYTHON COURSE STEPS
  - [x] World 1 Modules (Fundamentals)
  - [x] 1 - Introduction to the World of Programming
@@ -49,6 +49,7 @@ PYTHON COURSE STEPS
  - [x] 4 - Using Python modules
  - [x] 5 - Conditions in Python (if..else)
  - [x] 6 - Adding cores to Python
+
 Final test score: 90% success rate
 
 =======================================
@@ -58,6 +59,7 @@ Final test score: 90% success rate
  - [x] 2 - Conditions in Python (if..elif)
  - [x] 3 - Repeats in Python (for)
  - [x] 4 - Repeats in Python (while)
+
 Final test score: 100% success rate
 
 =======================================
@@ -69,4 +71,5 @@ Final test score: 100% success rate
  - [ ] 4 - Python Functions
  - [ ] 5 - Modularization in Python
  - [ ] 6 - Python Error Handling
+
 Final test note: Not yet done
