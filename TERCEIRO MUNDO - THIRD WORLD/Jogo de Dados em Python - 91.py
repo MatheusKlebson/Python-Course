@@ -4,12 +4,15 @@
 from random import randint
 from time import sleep
 jogadores = {}
-dados = []
+# dados = []
 print("Valores sorteado...")
 for cont in range(1,5):
     dado = randint(1,6)
     print(f"Jogador {cont} tirou {dado} no dado")
-    jogadores[f"Jogador{cont}"] = dado
+    jogadores[f"Jogador {cont}"] = dado
     # dados.append(dado)
     sleep(2)
+print("="*30)
+print("RESULTADO FINAL")
+jogadores.sort()
 print(jogadores)
