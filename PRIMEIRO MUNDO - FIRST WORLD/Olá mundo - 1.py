@@ -1,2 +1,3 @@
 #Crie um programa que escreva "OLÁ MUNDO" na tela
-print("Hello world")
+msg = "Olá mundo"
+print(msg)
