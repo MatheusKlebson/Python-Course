@@ -14,5 +14,3 @@ for cont in range(1,5):
     sleep(2)
 print("="*30)
 print("RESULTADO FINAL")
-jogadores.sort()
-print(jogadores)
