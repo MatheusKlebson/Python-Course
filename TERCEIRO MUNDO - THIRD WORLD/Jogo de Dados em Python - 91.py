@@ -3,8 +3,12 @@
 #No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado.
 from random import randint
 from time import sleep
+resultados = {}
+dados = []
 print("Valores sorteado...")
 for cont in range(1,5):
     dado = randint(1,6)
     print(f"Jogador {cont} tirou {dado} no dado")
+    dados.append(dado)
     sleep(2)
+print(dados)
