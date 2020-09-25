@@ -10,5 +10,7 @@ elif media >= 0 and media < 5:
     situacao = "REPROVADO"
 else:
     print("O aluno possui uma média inválida...")
-aluno = {"Nome":nome,"Media":media,"situação":situacao}
-print(aluno)
+aluno = {"Nome":nome,"Media":media,"Situação":situacao}
+print("="*50)
+for k,v in aluno.items():
+    print(f"- {k} é igual a {v}")
