@@ -11,4 +11,9 @@ for cont in range(1,5):
     jogadores[f"Jogador {cont}"] = dado
     sleep(1)
 ranking = sorted(jogadores.items(),key=itemgetter(1),reverse=True)
-print(jogadores)
+print("="*30)
+print("{:^30}".format("RESULTADO FINAL"))
+print("="*30)
+print(ranking)
+# for indice, valores in enumerate(ranking):
+#     print(f"{indice + 1}º Lugar: {}")
