@@ -9,3 +9,4 @@ for cont in range(1,5):
     jogadores["Jogador {cont}"] = dado
     print(f"O jogador {cont} sorteou o número {dado} no dado...") 
     sleep(1)
+print(jogadores)
