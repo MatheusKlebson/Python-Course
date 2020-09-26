@@ -5,11 +5,11 @@ from random import randint
 from time import sleep
 from operator import itemgetter
 jogadores = {}
-print("="*30)
-print("{:^30}".format("EM PORTUGUÊS"))
-print("="*30)
-print("{:^30}".format("JOGANDO DADOS"))
-print("="*30)
+print("="*50)
+print("{:^50}".format("EM PORTUGUÊS"))
+print("="*50)
+print("{:^50}".format("JOGANDO DADOS"))
+print("="*50)
 for cont in range(1,5):
     dado = randint(1,6)
     print(f"O jogador {cont} sorteou o número {dado} no dado...") 
