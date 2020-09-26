@@ -25,7 +25,7 @@ for indice, valores in enumerate(ranking):
 print("="*30)
 print("{:^30}".format("IN ENGLISH"))
 
-#Outra resolução
+#Outra resolução, Another resolution
 players = {"Player 1": randint(1,6),
 "Player 2": randint(1,6),
 "Player 3": randint(1,6),
