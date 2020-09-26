@@ -22,6 +22,6 @@ players = {"Player 1": randint(1,6),
 "Player 2": randint(1,6),
 "Player 3": randint(1,6),
 "Player 4": randint(1,6)}
-for Number_Random in players.items():
-    print(f"{Number_Random}") 
+for result in players.items():
+    print(f"The {result[0]}, Data number: {result[1]}") 
 
