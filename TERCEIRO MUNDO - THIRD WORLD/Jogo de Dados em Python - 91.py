@@ -22,6 +22,9 @@ players = {"Player 1": randint(1,6),
 "Player 2": randint(1,6),
 "Player 3": randint(1,6),
 "Player 4": randint(1,6)}
+print("="*50)
+print("{:^50}".format("FINAL RESULT"))
+print("="*50)
 for result in players.items():
     print(f"The {result[0]}, Data number: {result[1]}") 
 
