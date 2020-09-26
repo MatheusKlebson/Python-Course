@@ -22,23 +22,23 @@ players = {"Player 1": randint(1,6),
 "Player 2": randint(1,6),
 "Player 3": randint(1,6),
 "Player 4": randint(1,6)}
-print("="*50)
-print("{:^50}".format("PLAYING DATA"))
-print("="*50)
+print("="*30)
+print("{:^30}".format("PLAYING DATA"))
+print("="*30)
 for result in players.items():
     print(f"The {result[0]}, Data number: {result[1]}")
     sleep(1)
 ranking = sorted(players.items(),key=itemgetter(1),reverse=True) 
-print("="*50)
-print("{:^50}".format("FINAL RESULTS"))
-print("="*50)
+print("="*30)
+print("{:^30}".format("FINAL RANKING"))
+print("="*30)
 for i, player_date in enumerate(ranking):
     if i == 0:
-        print(f"{i + 1}st Position: {player_date[0]}")
+        print(f"    - {i + 1}st Position: {player_date[0]}")
     elif i == 1:
-        print(f"{i + 1}nd Position: {player_date[0]}")
+        print(f"    - {i + 1}nd Position: {player_date[0]}")
     elif i == 2:
-        print(f"{i + 1}rd Position: {player_date[0]}")
+        print(f"    - {i + 1}rd Position: {player_date[0]}")
     else:
-        print(f"{i + 1}th Position: {player_date[0]}")
+        print(f"    - {i + 1}th Position: {player_date[0]}")
     sleep(1)
