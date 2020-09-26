@@ -18,9 +18,10 @@ for indice, valores in enumerate(ranking):
     print(f"{indice + 1}º Lugar: {valores[0]} com o número do dado: {valores[1]} ")
 
 #Outra resolução
-players = {"Jogador 1": randint(1,6),
-"Jogador 2": randint(1,6),
-"Jogador 3": randint(1,6),
-"Jogador 4": randint(1,6)}
-print(players)
+players = {"Player 1": randint(1,6),
+"Player 2": randint(1,6),
+"Player 3": randint(1,6),
+"Player 4": randint(1,6)}
+for Number_Random in players.items():
+    print(f"{Number_Random}") 
 
