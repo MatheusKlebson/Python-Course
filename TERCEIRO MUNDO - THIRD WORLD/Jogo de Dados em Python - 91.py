@@ -4,18 +4,18 @@
 from random import randint
 from time import sleep
 from operator import itemgetter
-# jogadores = {}
-# for cont in range(1,5):
-#     dado = randint(1,6)
-#     print(f"O jogador {cont} sorteou o número {dado} no dado...") 
-#     jogadores[f"Jogador {cont}"] = dado
-#     sleep(1)
-# ranking = sorted(jogadores.items(),key=itemgetter(1),reverse=True)
-# print("="*50)
-# print("{:^50}".format("RESULTADO FINAL"))
-# print("="*50)
-# for indice, valores in enumerate(ranking):
-#     print(f"{indice + 1}º Lugar: {valores[0]} com o número do dado: {valores[1]} ")
+jogadores = {}
+for cont in range(1,5):
+    dado = randint(1,6)
+    print(f"O jogador {cont} sorteou o número {dado} no dado...") 
+    jogadores[f"Jogador {cont}"] = dado
+    sleep(1)
+ranking = sorted(jogadores.items(),key=itemgetter(1),reverse=True)
+print("="*50)
+print("{:^50}".format("RESULTADO FINAL"))
+print("="*50)
+for indice, valores in enumerate(ranking):
+    print(f"{indice + 1}º Lugar: {valores[0]} com o número do dado: {valores[1]} ")
 
 #Outra resolução
 players = {"Player 1": randint(1,6),
