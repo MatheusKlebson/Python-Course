@@ -32,4 +32,11 @@ print("="*50)
 print("{:^50}".format("FINAL RESULTS"))
 print("="*50)
 for i, player_date in enumerate(ranking):
-    print(f"{i + 1} Position: {player_date}")
+    if i == 0:
+        print(f"{i + 1}st Position: {player_date}")
+    elif i == 1:
+        print(f"{i + 1}nd Position: {player_date}")
+    elif i == 2:
+        print(f"{i + 1}rd Position: {player_date}")
+    else:
+        print(f"{i + 1}th Position: {player_date}")
