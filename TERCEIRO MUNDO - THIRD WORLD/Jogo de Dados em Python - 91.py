@@ -5,6 +5,11 @@ from random import randint
 from time import sleep
 from operator import itemgetter
 jogadores = {}
+print("="*30)
+print("{:^30}".format("EM PORTUGUÊS"))
+print("="*30)
+print("{:^30}".format("JOGANDO DADOS"))
+print("="*30)
 for cont in range(1,5):
     dado = randint(1,6)
     print(f"O jogador {cont} sorteou o número {dado} no dado...") 
@@ -16,6 +21,9 @@ print("{:^50}".format("RESULTADO FINAL"))
 print("="*50)
 for indice, valores in enumerate(ranking):
     print(f"{indice + 1}º Lugar: {valores[0]} com o número do dado: {valores[1]} ")
+    sleep(1)
+print("="*30)
+print("{:^30}".format("IN ENGLISH"))
 
 #Outra resolução
 players = {"Player 1": randint(1,6),
@@ -34,11 +42,11 @@ print("{:^30}".format("FINAL RANKING"))
 print("="*30)
 for i, player_date in enumerate(ranking):
     if i == 0:
-        print(f"    - {i + 1}st Position: {player_date[0]}")
+        print(f"    - {i + 1}st: {player_date[0]}")
     elif i == 1:
-        print(f"    - {i + 1}nd Position: {player_date[0]}")
+        print(f"    - {i + 1}nd: {player_date[0]}")
     elif i == 2:
-        print(f"    - {i + 1}rd Position: {player_date[0]}")
+        print(f"    - {i + 1}rd: {player_date[0]}")
     else:
-        print(f"    - {i + 1}th Position: {player_date[0]}")
+        print(f"    - {i + 1}th: {player_date[0]}")
     sleep(1)
