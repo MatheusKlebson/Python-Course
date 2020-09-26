@@ -6,7 +6,7 @@ from time import sleep
 jogadores = {}
 for cont in range(1,5):
     dado = randint(1,6)
-    jogadores["Jogador {cont}"] = dado
     print(f"O jogador {cont} sorteou o número {dado} no dado...") 
+    jogadores["Jogador {cont}"] = dado
     sleep(1)
 print(jogadores)
