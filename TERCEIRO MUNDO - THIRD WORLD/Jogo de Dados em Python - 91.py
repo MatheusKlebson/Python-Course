@@ -14,6 +14,5 @@ ranking = sorted(jogadores.items(),key=itemgetter(1),reverse=True)
 print("="*30)
 print("{:^30}".format("RESULTADO FINAL"))
 print("="*30)
-print(ranking)
-# for indice, valores in enumerate(ranking):
-#     print(f"{indice + 1}º Lugar: {}")
+for indice, valores in enumerate(ranking):
+    print(f"{indice + 1}º Lugar: {valores[0]} com o número do dado: {valores[1]} ")
