@@ -12,9 +12,9 @@ dados["Carteira"] = int(input("Número da carteira de trabalho (0 caso não tenh
 if dados["Carteira"] != 0:
     dados["Ano de contratação"] = int(input("Ano de contratação: "))
     dados["Salário"] = float(input("Salário do funcionário: "))
-    aposentadoria = dados["Ano de contratação"] + 34
-    
-    dados["Aposentadoria"] = dados["Idade"] + 34
+    AnoAposentadoria = dados["Ano de contratação"] + 34
+    IdadeAposentadoria = AnoAposentadoria - AnoNasc
+    dados["Aposentadoria"] = IdadeAposentadoria
 else:
     print(f"O cidadão {dados['Nome']} está desempregado...")
 print(dados)
