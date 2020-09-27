@@ -15,9 +15,11 @@ if dados["Carteira"] != 0:
     AnoAposentadoria = dados["Ano de contratação"] + 35
     IdadeAposentadoria = AnoAposentadoria - AnoNasc
     dados["Aposentadoria"] = IdadeAposentadoria
-print("="*50)
-print(f''' 
-- NOME: {dados["Nome"]}
-- IDADE: {dados["Idade"]}''')
-if dados["Carteira"] == 0:
-    print(f"CTPS: Não possui, o cidadão está desempregado")
+    print("="*50)
+    print(f''' 
+    - NOME: {dados["Nome"]}
+    - IDADE: {dados["Idade"]}
+    - CTPS: {dados["Carteira"]}
+    - Ano de contratação: {dados["Ano de contratação"]}''')
+'''if dados["Carteira"] == 0:
+    print(f"CTPS: Não possui, o cidadão está desempregado")'''
