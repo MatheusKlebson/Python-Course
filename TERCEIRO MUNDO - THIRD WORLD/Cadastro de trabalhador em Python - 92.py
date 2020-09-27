@@ -7,6 +7,6 @@ dados = {}
 dados["Nome"] = str(input("Nome do cidadão: ")).strip().title()
 AnoNasc = int(input("Ano de Nascimento: "))
 AnoAtual = date.today().year
-dados["Idade"] = AnoNasc - AnoAtual
+dados["Idade"] = AnoAtual - AnoNasc 
 dados["Carteira"] = int(input("Número da carteira de trabalho (0 caso não tenha): "))
 print(dados)
