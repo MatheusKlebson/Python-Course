@@ -23,5 +23,3 @@ else:
     print(f'''    - NOME: {dados["Nome"]}
     - IDADE: {dados["Idade"]}
     - CTPS: Não possui, o cidadão está desempregado''')
-
-    
