@@ -11,7 +11,7 @@ dados["Idade"] = AnoAtual - AnoNasc
 dados["Carteira"] = int(input("Número da carteira de trabalho (0 caso não tenha): "))
 if dados["Carteira"] != 0:
     dados["Ano de contratação"] = int(input("Ano de contratação: "))
-    dados["Salário"] = float(input("Salário do funcionário: "))
+    dados["Salário"] = float(input("Salário do funcionário:R$ "))
     AnoAposentadoria = dados["Ano de contratação"] + 35
     IdadeAposentadoria = AnoAposentadoria - AnoNasc
     dados["Aposentadoria"] = IdadeAposentadoria
@@ -20,6 +20,9 @@ if dados["Carteira"] != 0:
     - NOME: {dados["Nome"]}
     - IDADE: {dados["Idade"]}
     - CTPS: {dados["Carteira"]}
-    - Ano de contratação: {dados["Ano de contratação"]}''')
+    - Ano de contratação: {dados["Ano de contratação"]}
+    - Salário: R${dados["Salário"]}
+    - Idade da aposentadoria: {dados["Aposentadora"]}''')
+    
 '''if dados["Carteira"] == 0:
     print(f"CTPS: Não possui, o cidadão está desempregado")'''
