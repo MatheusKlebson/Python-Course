@@ -9,4 +9,9 @@ AnoNasc = int(input("Ano de Nascimento: "))
 AnoAtual = date.today().year
 dados["Idade"] = AnoAtual - AnoNasc 
 dados["Carteira"] = int(input("Número da carteira de trabalho (0 caso não tenha): "))
+if dados["Carteira"] != 0:
+    dados["Ano de contratação"] = int(input("Ano de contratação: "))
+    dados["Salário"] = float(input("Salário do funcionário: "))
+else:
+    print(f"O cidadão {dados["Nome"]} está desempregado...")
 print(dados)
