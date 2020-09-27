@@ -15,7 +15,7 @@ if dados["Carteira"] != 0:
     AnoAposentadoria = dados["Ano de contratação"] + 35
     IdadeAposentadoria = AnoAposentadoria - AnoNasc
     dados["Aposentadoria"] = IdadeAposentadoria
-    print("="*50)
+    print("="*55)
     print(f'''    - NOME: {dados["Nome"]}
     - IDADE: {dados["Idade"]}
     - CTPS: {dados["Carteira"]}
@@ -23,7 +23,7 @@ if dados["Carteira"] != 0:
     - Salário: R${dados["Salário"]}
     - Idade da aposentadoria: {dados["Aposentadoria"]}''')
 else:
-    print("="*50)
+    print("="*55)
     print(f'''    - NOME: {dados["Nome"]}
     - IDADE: {dados["Idade"]}
     - CTPS: Não possui, o cidadão está desempregado''')
