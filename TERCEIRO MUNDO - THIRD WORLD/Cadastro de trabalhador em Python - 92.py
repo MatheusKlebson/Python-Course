@@ -15,6 +15,6 @@ if dados["Carteira"] != 0:
     AnoAposentadoria = dados["Ano de contratação"] + 35
     IdadeAposentadoria = AnoAposentadoria - AnoNasc
     dados["Aposentadoria"] = IdadeAposentadoria
-else:
-    print(f"O cidadão {dados['Nome']} está desempregado...")
-print(dados)
+print("="*50)
+print(f''' - NOME: {dados["Nome"]}
+- IDADE: {dados["Idade"]}''')
