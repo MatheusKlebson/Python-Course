@@ -6,3 +6,4 @@ dados = {}
 dados["Nome"] = str(input("Nome do cidadão: ")).strip().title()
 dados["AnoNasc"] = int(input("Ano de Nascimento: "))
 dados["Carteira"] = int(input("Número da carteira de trabalho (0 caso não tenha): "))
+print(dados)
