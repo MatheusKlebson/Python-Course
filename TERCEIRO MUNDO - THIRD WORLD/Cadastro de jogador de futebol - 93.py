@@ -20,6 +20,8 @@ print("{:^50}".format("DADOS DO JOGADOR"))
 print("="*50)
 for k,v in jogador.items():
     print(f"{k} = {v}")
-print("-="*50)
+print("-="*25)
 print(f"{jogador['Nome']} jogou {partidas} partidas")
-
+for indice,gols in enumerate(gol):
+    print(f"Total de gols na {indice}º partida: {gols}")
+    
