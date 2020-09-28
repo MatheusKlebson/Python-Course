@@ -15,11 +15,6 @@ if dados["CTPS"] != 0:
     AnoAposentadoria = dados["Ano de contratação"] + 35
     IdadeAposentadoria = AnoAposentadoria - AnoNasc
     dados["Aposentadoria"] = IdadeAposentadoria
-    print("="*55)
-    for k, v in dados.items():
-        print(f' - {k}: {v}')
-else:
-    print("="*55)
-    print(f'''    - NOME: {dados["Nome"]}
-    - IDADE: {dados["Idade"]}
-    - CTPS: Não possui, o cidadão está desempregado''')
+print("="*55)
+for k, v in dados.items():
+    print(f' - {k}: {v}')
