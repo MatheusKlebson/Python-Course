@@ -7,14 +7,14 @@ gol = []
 totgol = 0
 jogador["Nome"] = str(input("Nome do jogador: ").strip().title())
 partidas = int(input(f"Total de partidas que {jogador['Nome']} jogou: "))
-for jogos in range(0,partidas):
+for jogos in range(1,partidas + 1):
     golPartida = int(input(f"Total de gols feitos na {jogos}º Partida: "))
     gol.append(golPartida)
     totgol += golPartida
 jogador["Gols"] = gol
 jogador["Total de Gols"] = totgol
 print(jogador)
-'''{'Nome': 'Matheus', 'Gols': [0, 4, 8, 6, 3], 'Total de Gols': 21}'''
+'''Discionario jogador: {'Nome': 'Matheus', 'Gols': [0, 4, 8, 6, 3], 'Total de Gols': 21}'''
 print("="*50)
 print("{:^50}".format("DADOS DO JOGADOR"))
 print("="*50)
@@ -23,5 +23,5 @@ for k,v in jogador.items():
 print("-="*25)
 print(f"{jogador['Nome']} jogou {partidas} partidas")
 for indice,gols in enumerate(gol):
-    print(f"Total de gols na {indice}º partida: {gols}")
+    print(f"Total de gols na {indice + 1}º partida: {gols}")
     
