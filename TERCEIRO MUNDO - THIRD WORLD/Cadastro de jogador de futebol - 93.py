@@ -3,9 +3,14 @@
 # Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário, 
 # incluindo o total de gols feitos durante o campeonato.
 jogador = {}
-gols = []
+gol = []
+totgol = 0
 jogador["Nome"] = str(input("Nome do jogador: ").strip().title())
-partidas = int(input("Total de partidas jogadas: "))
+partidas = int(input(f"Total de partidas que {jogador['Nome']} jogou: "))
 for jogos in range(0,partidas):
-    gols.append(int(input(f"Total de gols feitos na {jogos}º Partida: ")))
-print(gols)
+    golPartida = int(input(f"Total de gols feitos na {jogos}º Partida: ")
+    gol.append(golPartida)
+    totgol += golPartida
+jogador["Gols"] = gol
+print(jogador)
+print(f"Total de gols no campeonato: {totgol}")
