@@ -8,9 +8,8 @@ totgol = 0
 jogador["Nome"] = str(input("Nome do jogador: ").strip().title())
 partidas = int(input(f"Total de partidas que {jogador['Nome']} jogou: "))
 for jogos in range(0,partidas):
-    golPartida = int(input(f"Total de gols feitos na {jogos}º Partida: ")
+    golPartida = int(input(f"Total de gols feitos na {jogos}º Partida: "))
     gol.append(golPartida)
     totgol += golPartida
 jogador["Gols"] = gol
-print(jogador)
-print(f"Total de gols no campeonato: {totgol}")
+jogador["Total de Gols"] = totgol
