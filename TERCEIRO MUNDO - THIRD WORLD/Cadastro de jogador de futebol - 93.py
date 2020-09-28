@@ -13,3 +13,9 @@ for jogos in range(0,partidas):
     totgol += golPartida
 jogador["Gols"] = gol
 jogador["Total de Gols"] = totgol
+print(jogador)
+'''print("="*50)
+print("{:^50}".format("DADOS DO JOGADOR"))
+print("="*50)
+print(f"{jogador["Nome"]} jogou {partidas} partidas")
+for k,v in jogador:'''
