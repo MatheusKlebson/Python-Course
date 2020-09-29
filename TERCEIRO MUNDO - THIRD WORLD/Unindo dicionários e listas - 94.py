@@ -41,5 +41,9 @@ print(f"Total de pessoas cadastradas: {len(dados)}")
 print(f"Média do grupo: {media}")
 print(f"Nome das mulheres: {mulheres}")
 print("Lista de pessoas acima da media: ")
-for lista in acimaMedia:
-    print(f"{lista}")
+for lista in dados:
+    if pessoa["Idade"] >= media:
+        print()
+        for k,v in pessoa.items():
+            print(f"{k} = {v}")
+        print()
