@@ -42,8 +42,8 @@ print(f"Média do grupo: {media}")
 print(f"Nome das mulheres: {mulheres}")
 print("Lista de pessoas acima da media: ")
 for lista in dados:
-    if pessoa["Idade"] >= media:
+    if lista["Idade"] >= media:
         print()
-        for k,v in pessoa.items():
+        for k,v in lista.items():
             print(f"{k} = {v}")
         print()
