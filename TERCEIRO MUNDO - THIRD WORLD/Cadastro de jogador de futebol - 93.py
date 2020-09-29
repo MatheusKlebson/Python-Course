@@ -14,7 +14,7 @@ for jogos in range(1,partidas + 1):
 jogador["Gols"] = gol
 jogador["Total de Gols"] = totgol
 print(jogador)
-'''Discionario jogador: {'Nome': 'Matheus', 'Gols': [0, 4, 8, 6, 3], 'Total de Gols': 21}'''
+'''Discionario jogador, Estrutura: {'Nome': 'Matheus', 'Gols': [0, 4, 8, 6, 3], 'Total de Gols': 21}'''
 print("="*50)
 print("{:^50}".format("DADOS DO JOGADOR"))
 print("="*50)
