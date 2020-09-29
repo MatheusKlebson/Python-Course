@@ -10,10 +10,17 @@ pessoa = {}
 while True:
     pessoa["Nome"] = str(input("Nome da Pessoa: ")).strip().title()
     pessoa["Idade"] = int(input("Idade: "))
-    pessoa["Sexo"] = str(input("Sexo: [M/F]")).strip().upper()[0]
+    sexo = str(input("Sexo: [M/F]")).strip().upper()[0]
+    while sexo not in "MF":
+        print("ERRO!! Escreva M ou F...")
+        sexo = str(input("Sexo: [M/F]")).strip().upper()[0]
+    if sexo in "MF":
+        pessoa["Sexo"] = sexo
     dados.append(pessoa.copy())
-    option = " "
+    
+    option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     while not option in "SN":
+        print("ERRO!! Escreva S ou N...")
         option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     if option == "N":
         break
