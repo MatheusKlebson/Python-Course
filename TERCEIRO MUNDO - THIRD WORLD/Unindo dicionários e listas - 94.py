@@ -26,17 +26,17 @@ while True:
     somaidade = somaidade + pessoa["Idade"]
     dados.append(pessoa.copy())
      
-
     media = somaidade/len(dados)
     if pessoa["Idade"] > media:
         acimaMedia.append(dados[cont])
+    cont += 1
     option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     while not option in "SN":
         print("ERRO!! Escreva S ou N...")
         option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     if option == "N":
         break
-    cont += 1
+    
 print("="*55)
 print(f"Total de pessoas cadastradas: {len(dados)}")
 print(f"Média do grupo: {media}")
