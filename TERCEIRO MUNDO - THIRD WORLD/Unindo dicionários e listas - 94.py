@@ -10,6 +10,7 @@ mulheres = []
 pessoa = {}
 somaidade = 0
 while True:
+    pessoa.clear()
     pessoa["Nome"] = str(input("Nome da Pessoa: ")).strip().title()
     pessoa["Idade"] = int(input("Idade: "))
     sexo = str(input("Sexo: [M/F]")).strip().upper()[0]
@@ -39,6 +40,6 @@ for tabela in dados:
     if tabela["Idade"] >= media:
         print("        ",end="")
         for k,v in tabela.items():
-            print(f"{k} = {v}; ") 
+            print(f"{k} = {v}; ",end="") 
         print()
 print("<<<< ENCERRADO >>>>")
