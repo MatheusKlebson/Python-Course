@@ -9,9 +9,6 @@ dados = []
 mulheres = []
 pessoa = {}
 somaidade = 0
-media = 0
-'''acimaMedia = []
-cont = 0'''
 while True:
     pessoa["Nome"] = str(input("Nome da Pessoa: ")).strip().title()
     pessoa["Idade"] = int(input("Idade: "))
@@ -27,9 +24,6 @@ while True:
     dados.append(pessoa.copy())
      
     media = somaidade/len(dados)
-    '''if pessoa["Idade"] > media:
-        acimaMedia.append(dados[cont])
-    cont += 1'''
     option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     while not option in "SN":
         print("ERRO!! Escreva S ou N...")
@@ -41,9 +35,7 @@ print(f"Total de pessoas cadastradas: {len(dados)}")
 print(f"Média do grupo: {media}")
 print(f"Nome das mulheres: {mulheres}")
 print("Lista de pessoas acima da media: ")
-for lista in dados:
-    if lista["Idade"] >= media:
-        print()
-        for k,v in lista.items():
-            print(f"{k} = {v}")
-        print()
+for tabela in dados:
+    if tabela["Idade"] >= media:
+        print(tabela) 
+
