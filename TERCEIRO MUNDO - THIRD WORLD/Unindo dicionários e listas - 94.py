@@ -37,5 +37,8 @@ print(f"Nome das mulheres: {mulheres}")
 print("Lista de pessoas acima da media: ")
 for tabela in dados:
     if tabela["Idade"] >= media:
-        print(tabela) 
-
+        print("        ",end="")
+        for k,v in tabela.items():
+            print(f"{k} = {v}; ") 
+        print()
+print("<<<< ENCERRADO >>>>")
