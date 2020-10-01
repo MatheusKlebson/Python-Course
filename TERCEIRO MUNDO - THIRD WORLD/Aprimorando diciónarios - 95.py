@@ -1,8 +1,7 @@
-# Exercício Python 095: Aprimore o desafio 93 para que ele funcione com vários jogadores, 
+# Exercício Python 095: Aprimore o desafio 93 para que ele funcione com vários jogadores, x 
 # incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 jogadores = []
 while True:
-    jogador.clear()
     jogador = {}
     gol = []
     totgol = 0
@@ -23,15 +22,11 @@ while True:
         break
 print(jogadores)
 '''Discionario jogador, Estrutura: {'Nome': 'Matheus', 'Gols': [0, 4, 8, 6, 3], 'Total de Gols': 21}'''
-'''[{'Nome': 'Matheus', 'Gols': [0, 3], 'Total de Gols': 3}, {'Nome': 'Micaias', 'Gols': [2, 0, 1], 'Total de Gols': 3}]''''
-print("="*50)
-print("{:^50}".format("DADOS DO JOGADOR"))
-print("="*50)
-'''for k,v in jogador.items():
-    print(f"{k} = {v}")
-print("-="*25)
-print(f"{jogador['Nome']} jogou {partidas} partidas")
-print("-="*25)
-for indice,gols in enumerate(gol):
-    print(f"Total de gols na {indice + 1}º partida: {gols}")'''
+'''[{'Nome': 'Matheus', 'Gols': [0, 3], 'Total de Gols': 3}, {'Nome': 'Micaias', 'Gols': [2, 0, 1], 'Total de Gols': 3}]'''
+print("="*65)
+print("{:^65}".format("DADOS DOS JOGADORES"))
+print("="*65)
+print(f"{'NUM':>5}{'NOME':>15}{'GOLS':>20}{'TOTAL DE GOLS':>23}")
+print('-'*65)
+
     
