@@ -29,4 +29,4 @@ print("="*65)
 print(f"{'NUM':>5}{'NOME':>15}{'GOLS':>20}{'TOTAL DE GOLS':>23}")
 print('-'*65)
 for indice,player in enumerate(jogadores):
-    print(f"{indice:>5}{player['Nome']:>15}")
+    print(f"{indice:>5}{player['Nome']:>15}{player['Gols']:>20}{player['Total de Gols']:>23}")
