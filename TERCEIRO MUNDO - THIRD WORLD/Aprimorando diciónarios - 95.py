@@ -16,6 +16,7 @@ for k,v in jogador.items():
 print("="*65)
 print(f"O jogador {jogador['Nome']} jogou {tot} partidas. ")
 for i, v in enumerate(jogador["Gols"]):
-    print(f" => Na partida {i}, fez {v} gols")
+    print(f" => Na partida {i+1}, fez {v} gols")
+
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
