@@ -8,5 +8,8 @@ for c in range(1,tot + 1):
     partidas.append(int(input(f"Total de gols feito na {c}º Partida: ")))
 jogador["Gols"] = partidas[:]
 jogador["Total"] = sum(partidas)
+print("="*65)
+print(jogador)
+print("="*65)
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
