@@ -7,9 +7,11 @@ tot = int(input(f"Total de partidas que {jogador['Nome']} participou: "))
 for c in range(1,tot + 1):
     partidas.append(int(input(f"Total de gols feito na {c}º Partida: ")))
 jogador["Gols"] = partidas[:]
-jogador["Total"] = sum(partidas)
+jogador["Total de gols"] = sum(partidas)
 print("="*65)
 print(jogador)
 print("="*65)
+for k,v in jogador.items():
+    print(f"{k}: {v}")
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
