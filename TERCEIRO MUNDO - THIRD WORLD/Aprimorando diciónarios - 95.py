@@ -14,6 +14,6 @@ print("="*65)
 for k,v in jogador.items():
     print(f"{k}: {v}")
 print("="*65)
-print(f"O jogador {jogador["Nome"]} jogou {len(jogador["Gols"])} de partidas. ")
+print(f"O jogador {jogador['Nome']} jogou {tot} partidas. ")
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
