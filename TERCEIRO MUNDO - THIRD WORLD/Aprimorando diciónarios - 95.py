@@ -37,6 +37,8 @@ while True:
     if busca >= len(time):
         print(F"ERRO. Não existe jogador com código {busca}!")
     else:
-        print(f"LEVANTAMENTO DO JOGADOR {time[busca]['Nome']}")
+        print(f"LEVANTAMENTO DO JOGADOR {time[busca]['Nome']}:")
+        for i, g in enumerate(time[busca]["Gols"]):
+            print(f" No jogo {i + 1} fez {g} gols")
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
