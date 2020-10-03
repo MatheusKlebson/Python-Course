@@ -12,6 +12,12 @@ while True:
     jogador["Gols"] = partidas[:]
     jogador["Total de gols"] = sum(partidas)
     time.append(jogador.copy())
+
+    option = " "
+    while not option in "SN":
+        option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
+    if option == "N":
+        break
 print("="*65)
 print(jogador)
 print("="*65)
