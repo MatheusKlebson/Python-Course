@@ -24,6 +24,11 @@ for i in jogador.keys():
     print(f"{i:<15}",end="")
 print()
 print("-"*40)
-
+for k, v in enumerate(time):
+    print(f"{k:>3}",end="")
+    for d in v.values():
+        print(f"{str():<15}",end="")
+    print()
+print("-"40)
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
