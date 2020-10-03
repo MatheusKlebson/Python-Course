@@ -1,13 +1,17 @@
 # Exercício Python 095: Aprimore o desafio 93 para que ele funcione com vários jogadores, x 
 # incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 jogador = dict()
+time = list()
 partidas = list()
-jogador["Nome"] = str(input("Nome do jogador: ")).strip().title()
-tot = int(input(f"Total de partidas que {jogador['Nome']} participou: "))
-for c in range(1,tot + 1):
-    partidas.append(int(input(f"Total de gols feito na {c}º Partida: ")))
-jogador["Gols"] = partidas[:]
-jogador["Total de gols"] = sum(partidas)
+while True:
+    jogador.clear()
+    jogador["Nome"] = str(input("Nome do jogador: ")).strip().title()
+    tot = int(input(f"Total de partidas que {jogador['Nome']} participou: "))
+    for c in range(0,tot):
+        partidas.append(int(input(f"Total de gols feito na {c+1}º Partida: ")))
+    jogador["Gols"] = partidas[:]
+    jogador["Total de gols"] = sum(partidas)
+    time.append(jogador.copy())
 print("="*65)
 print(jogador)
 print("="*65)
