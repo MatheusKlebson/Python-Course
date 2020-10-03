@@ -30,5 +30,9 @@ for k, v in enumerate(time):
         print(f"{str():<15}",end="")
     print()
 print("-"40)
+while True:
+    busca = int(input("Mostrar dados de qual jogador? (999 para parar): "))
+    if busca == 999:
+        break
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
