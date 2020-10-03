@@ -36,5 +36,7 @@ while True:
         break
     if busca >= len(time):
         print(F"ERRO. Não existe jogador com código {busca}!")
+    else:
+        print(f"LEVANTAMENTO DO JOGADOR {time[busca]['Nome']}")
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
