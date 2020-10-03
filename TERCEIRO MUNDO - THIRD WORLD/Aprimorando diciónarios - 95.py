@@ -40,5 +40,7 @@ while True:
         print(f"LEVANTAMENTO DO JOGADOR {time[busca]['Nome']}:")
         for i, g in enumerate(time[busca]["Gols"]):
             print(f" No jogo {i + 1} fez {g} gols")
+    print("=" * 40)
+print("<<< VOLTE SEMPRE >>>")
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
