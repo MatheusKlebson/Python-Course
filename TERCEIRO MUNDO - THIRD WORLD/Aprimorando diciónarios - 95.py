@@ -18,15 +18,12 @@ while True:
         option = str(input("Deseja continuar[S/N]? ")).strip().upper()[0]
     if option == "N":
         break
-print("="*65)
-print(jogador)
-print("="*65)
-for k,v in jogador.items():
-    print(f"{k}: {v}")
-print("="*65)
-print(f"O jogador {jogador['Nome']} jogou {tot} partidas. ")
-for i, v in enumerate(jogador["Gols"]):
-    print(f" => Na partida {i+1}, fez {v} gols")
-print(f"Foi um total de {jogador['Total de gols']} gols")
+print("="*30)
+print("cod",end="")
+for i in jogador.keys():
+    print(f"{i:<15}",end="")
+print()
+print("-"*40)
+
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
