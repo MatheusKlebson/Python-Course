@@ -34,5 +34,7 @@ while True:
     busca = int(input("Mostrar dados de qual jogador? (999 para parar): "))
     if busca == 999:
         break
+    if busca >= len(time):
+        print(F"ERRO. Não existe jogador com código {busca}!")
 '''ASSISTI A AULA, SE PRECISO COPIA O CÓDIGO DO GUANABARA E ESTUDA COM CALMA, 
 É O ULTIMO EXERCICIO FAZ SENTIDO NÃO TA CONSEGUINDO RESOLVER'''
