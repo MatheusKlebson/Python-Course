@@ -7,6 +7,9 @@ def mostraLinha(txt):
 def area(largura,comprimento):
     area = (largura * comprimento)/2
     print(f"A dimensão da area {largura}X{comprimento} é de {area}m2")
+
+
 mostraLinha("CUMPRIMENTO DA ÁREA")
 l = float(input("Largura: "))
 c = float(input("Cumprimento: "))
+area(l,c)
