@@ -8,9 +8,10 @@
 def escreva(msg):
     tam = len(msg) + 5
     print("="*tam)
-    print("{:^tam}".format(msg))
+    print(f"  {msg}")
     print('='*tam)
 
-escreva("MATHEUS É LINDO")
+
+escreva("I WANNA BE PROGRAMMER")
 escreva("HELLO WORLD")
 escreva("PROGRAMMING IS LIFE")
