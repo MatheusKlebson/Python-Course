@@ -8,7 +8,7 @@
 def escreva(msg):
     tam = len(msg) + 5
     print("="*tam)
-    print(f"{msg}")
+    print("{:^tam}".format(msg))
     print('='*tam)
 
 escreva("MATHEUS É LINDO")
