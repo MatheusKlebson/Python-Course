@@ -5,7 +5,7 @@ def mostraLinha(txt):
     print("{:^50}".format(txt))
     print("=" * 50)
 def area(largura,comprimento):
-    area = (largura * comprimento)/2
+    area = largura * comprimento
     print(f"A dimensão da area {largura}X{comprimento} é de {area}m2")
 
 
