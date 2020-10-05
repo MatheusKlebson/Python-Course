@@ -9,7 +9,7 @@ def area(largura,comprimento):
     print(f"A dimensão da area {largura}X{comprimento} é de {area}m2")
 
 
-mostraLinha("CUMPRIMENTO DA ÁREA")
+mostraLinha("COMPRIMENTO DA ÁREA")
 l = float(input("Largura: "))
-c = float(input("Cumprimento: "))
+c = float(input("Comprimento: "))
 area(l,c)
