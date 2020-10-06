@@ -5,9 +5,16 @@
  b) de 10 até 0, de 2 em 2                                                                                                                                            
  c) uma contagem personalizada'''
 from time import sleep
+def mostraLinha(txt):
+    print("="*30)
+    print(txt)
 def contador(inicio,fim,passo):
     for c in range(inicio,fim,passo):
         print(c,end=" ")
         sleep(1)
-contador(1,10,1)
-
+    print("FIM")
+mostraLinha("CONTAGEM DE 1 A 10")
+contador(1,11,1)
+mostraLinha("CONTAGEM DE 10 A 0 DE 2 EM 2")
+contador(10,0,-2)
+mostraLinha()
