@@ -33,4 +33,6 @@ if i > f and p > 0:
     dobro *= 2
     p = p - dobro 
     mostraLinha(f"CONTAGEM DE {i} A {f} DE {p + dobro} EM {p + dobro}")
+else:
+    mostraLinha(f"CONTAGEM DE {i} A {f} DE {p} EM {p}")
 contador(i,f,p)
