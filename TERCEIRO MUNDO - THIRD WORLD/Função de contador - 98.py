@@ -12,12 +12,12 @@ def contador(inicio,fim,passo):
     if fim > 0:
         for c in range(inicio,fim + 1,passo):
             print(c,end=" ")
-            #sleep(1)
+            sleep(1)
         print("FIM")
     else:
         for c in range(inicio,fim - 1,passo):
             print(c,end=" ")
-            #sleep(1)
+            sleep(1)
         print("FIM")
 mostraLinha("CONTAGEM DE 1 A 10 DE 1 EM 1")
 contador(1,10,1)
@@ -28,5 +28,9 @@ print("Agora é sua vez de personalizar...")
 i = int(input("Inicio: "))
 f = int(input("Fim: "))
 p = int(input("Passo: "))
+if i > f:
+    dobro = p
+    dobro *= 2
+    p = p - dobro 
 mostraLinha(f"CONTAGEM DE {i} A {f} DE {p} EM {p}")
 contador(i,f,p)
