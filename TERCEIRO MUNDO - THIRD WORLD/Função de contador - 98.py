@@ -9,12 +9,18 @@ def mostraLinha(txt):
     print("="*30)
     print(txt)
 def contador(inicio,fim,passo):
-    for c in range(inicio,fim,passo):
-        print(c,end=" ")
-        sleep(1)
-    print("FIM")
+    if fim > 0:
+        for c in range(inicio,fim + 1,passo):
+            print(c,end=" ")
+            #sleep(1)
+        print("FIM")
+    else:
+        for c in range(inicio,fim - 1,passo):
+            print(c,end=" ")
+            #sleep(1)
+        print("FIM")
 mostraLinha("CONTAGEM DE 1 A 10 DE 1 EM 1")
-contador(1,11,1)
+contador(1,10,1)
 mostraLinha("CONTAGEM DE 10 A 0 DE 2 EM 2")
 contador(10,0,-2)
 print("="*30)
@@ -22,4 +28,5 @@ print("Agora é sua vez de personalizar...")
 i = int(input("Inicio: "))
 f = int(input("Fim: "))
 p = int(input("Passo: "))
-#mostraLinha()
+mostraLinha(f"CONTAGEM DE {i} A {f} DE {p} EM {p}")
+contador(i,f,p)
