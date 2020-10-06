@@ -7,7 +7,7 @@
 from time import sleep
 def contador(inicio,fim,passo):
     for c in range(inicio,fim,passo):
-        print(c)
+        print(c,end=" ")
         sleep(1)
 contador(1,10,1)
 
