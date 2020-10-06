@@ -9,14 +9,18 @@ def mostraLinha(txt):
     print("="*30)
     print(txt)
 def contador(inicio,fim,passo):
+    if passo == 0:
+        print("Impossivel fazer 0 passo")
+    if passo < 0:
+        passo *= -1
     if fim > 0:
         for c in range(inicio,fim + 1,passo):
-            print(c,end=" ")
+            print(c,end=" ",flush=True)
             sleep(1)
         print("FIM")
     else:
         for c in range(inicio,fim - 1,passo):
-            print(c,end=" ")
+            print(c,end=" ",flush=True)
             sleep(1)
         print("FIM")
 mostraLinha("CONTAGEM DE 1 A 10 DE 1 EM 1")
