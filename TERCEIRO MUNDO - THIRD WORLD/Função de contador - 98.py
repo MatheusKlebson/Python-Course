@@ -13,7 +13,7 @@ def contador(inicio,fim,passo):
         print("Impossivel fazer 0 passo")
     if passo < 0:
         passo *= -1
-    if fim > 0:
+    if fim > 0 or fim > inicio:
         for c in range(inicio,fim + 1,passo):
             print(c,end=" ",flush=True)
             sleep(1)
