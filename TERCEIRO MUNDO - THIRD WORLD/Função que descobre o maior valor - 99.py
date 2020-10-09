@@ -6,11 +6,14 @@ def maior(* num):
     print("="*55)
     print(f"Os valores recebido: {num}")
     print(f"Total de valores recebidos: {len(num)}")
-    print(f"O maior valor: {max(num)}")
+    if len(num) == 0:
+        print("O maior valor: 0")
+    else:
+        print(f"O maior valor: {max(num)}")
 
 
 maior(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
 maior(randint(0,10),randint(0,10))
 maior(randint(0,10),randint(0,10),randint(0,10))
 maior(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
-maior(0)
+maior()
