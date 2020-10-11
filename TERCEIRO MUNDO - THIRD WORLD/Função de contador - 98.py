@@ -11,8 +11,6 @@ def mostraLinha(txt):
 def contador(inicio,fim,passo):
     if passo == 0:
         print("Impossivel fazer 0 passo")
-    '''if passo < 0:
-        passo *= -1'''
     if fim > 0 or fim > inicio:
         for c in range(inicio,fim + 1,passo):
             print(c,end=" ",flush=True)
@@ -41,8 +39,3 @@ else:
     mostraLinha(f"CONTAGEM DE {i} A {f} DE {p} EM {p}")
 contador(i,f,p)
 
-'''Assista a solução novamente e entenda o segundo if da função
-if passo < 0:
-    passo *= -1
-    
-    pois é isso que está dando bug no programa'''
