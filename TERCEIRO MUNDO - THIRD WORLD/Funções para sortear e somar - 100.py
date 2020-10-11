@@ -14,9 +14,10 @@ def somaPar():
             soma += numeros[cont]
     print(f"Somando os pares da lista {numeros} o resultado é: {soma}")
 
-
+    
 from random import randint
 numeros = []
 sorteia()
 print(f"Valores sorteados: {numeros}")
 somaPar()
+
