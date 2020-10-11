@@ -13,9 +13,9 @@ def somaPar():
     for cont in range(0,5):
         if numeros[cont] % 2 == 0:
             soma += numeros[cont]
-    print(f"A soma dos pares é: {soma}")
+    print(f"Somando os pares da lista {numeros} o resultado é: {soma}")
 
 
 sorteia()
-print(numeros)
+print(f"Valores sorteados: {numeros}")
 somaPar()
