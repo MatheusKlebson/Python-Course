@@ -8,6 +8,14 @@ def sorteia():
         num = randint(1,10)
         numeros.append(num)
     
-#def somaPar():
+def somaPar():
+    soma = 0
+    for cont in range(0,5):
+        if numeros[cont] % 2 == 0:
+            soma += numeros[cont]
+    print(f"A soma dos pares é: {soma}")
+
+
 sorteia()
 print(numeros)
+somaPar()
