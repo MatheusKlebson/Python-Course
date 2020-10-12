@@ -4,7 +4,11 @@
 from datetime import date
 def voto(anoNasc):
     idade = date.today().year - anoNasc
-    print(f"Com {idade} anos: ",end="")
+    print(f"Com {idade} anos - ",end="")
+    if idade >= 18 and idade < 70:
+        print("VOTO: OBRIGATÓRIO")
+    elif idade >= 16 and idade < 18:
+        print("VOTO: OPCIONAL")
 
 print("="*50)
 ano = int(input("Em que ano você nasceu: "))
