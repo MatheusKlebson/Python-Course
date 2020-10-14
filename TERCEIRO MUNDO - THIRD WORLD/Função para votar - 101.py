@@ -6,7 +6,10 @@ def voto(anoNasc):
     anoAtual = date.today().year
     idade = anoAtual - anoNasc
     print(f"Com {idade} anos - ",end=" ")
-
+    if idade >= 16 and idade < 18 or idade > 70:
+        print("VOTO: OPCIONAL")
+    elif idade >= 18 and idade <= 70:
+        print("VOTO: OBRIGATÓRIO")
 
 nascimento = int(input("Ano que você nasceu: "))
 voto(nascimento)
