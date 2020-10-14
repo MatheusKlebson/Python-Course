@@ -5,13 +5,12 @@ def voto(anoNasc):
     from datetime import date
     anoAtual = date.today().year
     idade = anoAtual - anoNasc
-    print(f"Com {idade} anos - ",end="")
     if idade >= 16 and idade < 18 or idade > 70:
-        print("VOTO: OPCIONAL")
+        return f"Com {idade} anos - VOTO: OPCIONAL"
     elif idade >= 18 and idade <= 70:
-        print("VOTO: OBRIGATÓRIO")
+        return f"Com {idade} anos - VOTO: OBRIGATÓRIO"
     else:
-        print("VOTO: NEGADO")
+        return f"Com {idade} anos - VOTO: NEGADO"
 
 
 print("="*50)
