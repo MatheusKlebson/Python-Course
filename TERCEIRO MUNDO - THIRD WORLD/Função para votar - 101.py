@@ -4,6 +4,8 @@
 def voto(anoNasc):
     from datetime import date
     anoAtual = date.today().year
+    idade = anoAtual - anoNasc
+    print(f"Com {idade} anos - ",end=" ")
 
 
 nascimento = int(input("Ano que você nasceu: "))
