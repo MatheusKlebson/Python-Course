@@ -15,4 +15,4 @@ def voto(anoNasc):
 
 print("="*50)
 nascimento = int(input("Ano que você nasceu: "))
-voto(nascimento)
+print(voto(nascimento))
