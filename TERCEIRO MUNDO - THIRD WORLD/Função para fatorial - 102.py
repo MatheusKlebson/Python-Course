@@ -20,4 +20,14 @@ def fatorial(calcular,show):
         return f
 print("="*50)
 num = int(input("Digite um número para o fatorial: "))
-print(fatorial(num,show=True))
+show = " "
+while show not in "SN":
+    show = str(input("MOSTRA FATORIAL[S/N]: ")).upper().strip()[0]
+    if show == "S":
+        show = True
+        break
+    if show == "N":
+        show = False
+        break
+
+print(fatorial(num,show))
