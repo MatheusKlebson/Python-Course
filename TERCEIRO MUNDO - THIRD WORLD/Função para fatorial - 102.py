@@ -29,5 +29,4 @@ while show not in "SN":
     if show == "N":
         show = False
         break
-
 print(fatorial(num,show))
