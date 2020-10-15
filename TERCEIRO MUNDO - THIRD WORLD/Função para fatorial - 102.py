@@ -6,8 +6,13 @@ def fatorial(calcular,show):
         f = 1
         for c in range(calcular,0,-1):
             f *= c
+            print(f"{c}", end="")
+            if c > 1:
+                print(" X ", end="")
+            else:
+                print(" = ", end="")
         return f
-    else;
+    else:
         f = 1
         for c in range(calcular,0,-1):
             f *= c
