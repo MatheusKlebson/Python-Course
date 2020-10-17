@@ -7,5 +7,8 @@ def ficha(jogador="<desconhecido>",gols=0):
 
 print("="*50)
 nome = str(input("Nome do jogador: ").strip().title())
-gol = int(input(f"Total de gols: "))
+gol = str(input(f"Total de gols: ")).strip()
+if gol == '':
+    gol = 0
+
 ficha(nome,gol)
