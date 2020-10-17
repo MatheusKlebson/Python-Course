@@ -5,10 +5,12 @@
 def ficha(jogador="<desconhecido>",gols=0):
     print(f"O jogador {jogador} fez {gols} gols no campeonato")
 
+
 print("="*50)
 nome = str(input("Nome do jogador: ").strip().title())
 gol = str(input(f"Total de gols: ")).strip()
 if gol == '':
     gol = 0
-
+if nome == '':
+    nome = "<desconhecido>"
 ficha(nome,gol)
