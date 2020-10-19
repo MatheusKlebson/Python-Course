@@ -16,8 +16,7 @@ def leiaInt(msg):
             break
     return valor
 
+
 #Programa principal
 num = leiaInt("Digite um número: ")
 print(f"O número digitado foi {num}")
-
-'''Assista a aula e veja como resolver esse exercicio'''
