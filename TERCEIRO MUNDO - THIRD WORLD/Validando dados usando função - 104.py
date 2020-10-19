@@ -3,12 +3,11 @@
 # só que fazendo a validação para aceitar apenas um valor numérico. 
 # Ex: n = leiaInt(‘Digite um n: ‘)
 def leiaInt(msg):
-    valor = 0
     ok = False
     while True:
         num = str(input(msg))
         if num.isnumeric():
-            valor = num 
+            valor = num
             ok = True
         else:
             print("ERRO!! Não é um número...")
