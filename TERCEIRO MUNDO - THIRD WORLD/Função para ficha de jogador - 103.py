@@ -9,7 +9,9 @@ def ficha(jogador="<desconhecido>",gols=0):
 print("="*50)
 nome = str(input("Nome do jogador: ").strip().title())
 gol = str(input(f"Total de gols: ")).strip()
-if gol == '':
+if gol.isnumeric():
+    int(gol)
+else:
     gol = 0
 if nome == '':
     nome = "<desconhecido>"
