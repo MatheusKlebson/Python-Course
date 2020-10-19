@@ -3,20 +3,21 @@
 # só que fazendo a validação para aceitar apenas um valor numérico. 
 # Ex: n = leiaInt(‘Digite um n: ‘)
 def leiaInt(msg):
-    ok = False
     valor = 0
+    ok = False
     while True:
         num = str(input(msg))
         if num.isnumeric():
-            valor = int(num)
+            valor = num 
             ok = True
         else:
-            print("ERRO!! DIGITE UM NÚMERO...")
+            print("ERRO!! Não é um número...")
         if ok == True:
             break
     return valor
 
-
 #Programa principal
 num = leiaInt("Digite um número: ")
 print(f"O número digitado foi {num}")
+
+'''Assista a aula e veja como resolver esse exercicio'''
