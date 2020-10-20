@@ -14,5 +14,8 @@ def readInt(message):
         if okay == True:
             break
     return value
+
+    
+print("=" * 50)
 number = readInt("Write a number: ")
 print(f"You writed a number {number}, Thanks!!")
