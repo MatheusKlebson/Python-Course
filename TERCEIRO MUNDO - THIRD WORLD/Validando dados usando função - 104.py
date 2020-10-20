@@ -4,6 +4,10 @@
 # Ex: n = leiaInt(‘Digite um n: ‘)
 def readInt(message):
     number = str(input(message))
-    
+    if number.isnumeric():
+        value = number 
+    else:
+        print("ERROR!! YOU NOT WRITED A NUMBER")
+    return value
 number = readInt("Write a number: ")
-print(f"You writed a {number}, Thanks!!")
+print(f"You writed a number {number}, Thanks!!")
