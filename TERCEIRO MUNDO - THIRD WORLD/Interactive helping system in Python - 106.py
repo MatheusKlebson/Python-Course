@@ -19,3 +19,4 @@ while True:
         break
     else:
         ajuda(comando)
+titulo("ATÉ LOGO")
