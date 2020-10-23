@@ -1,18 +1,20 @@
 #  Exercício Python 102: Crie um programa que tenha uma função fatorial() que receba dois parâmetros:
 #  o primeiro que indique o número a calcular e outro chamado show, que será um valor lógico (opcional)
 #  indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
-def fatorial(calcular,show):
+def factorial(n,show):
     print("="*50)
     f = 1
-    for c in range(calcular,0,-1):
+    for cont in range(n,0,-1):
         if show == True:
-            print(f"{c}", end="")
-            if c > 1:
-                print(" X ", end="")
+            print(f"{cont}",end="")
+            if cont > 1:
+                print(" X ",end="")
             else:
-                print(" = ", end="")
-        f *= c
+                print(" = ",end="")
+        f *= cont
     return f
+
+
 print("="*50)
 num = int(input("Digite um número para o fatorial: "))
 show = " "
@@ -24,4 +26,4 @@ while show not in "SN":
     if show == "N":
         show = False
         break
-print(fatorial(num,show))
+print(factorial(num,show))
