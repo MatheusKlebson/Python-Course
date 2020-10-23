@@ -5,10 +5,10 @@
 # total de valores
 # e o maior numero entre eles
 from random import randint
-def fisrtNumber(*num):
+def fisrtNumber(*numbers):
     print("="*50)
-    print(f"Received values: {num}")
-
+    print(f"Received values: {numbers}")
+    print(f"Total values: {len(numbers)}")
 
 fisrtNumber(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
 fisrtNumber(randint(0,10),randint(0,10))
