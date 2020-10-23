@@ -5,13 +5,11 @@
 # ~~~~~~~~~                                                                                                                                                            
 # Olá, Mundo!                                                                                                                                                          
 # ~~~~~~~~~  
-def escreva(msg):
-    tam = len(msg) + 5
-    print("="*tam)
-    print(f"  {msg}")
-    print('='*tam)
+def write(text):
+    size = len(text) + 4
+    print("="*size)
+    print(f"  {text}")
+    print("="*size)
 
-
-escreva("I WANNA BE PROGRAMMER")
-escreva("HELLO WORLD")
-escreva("PROGRAMMING IS LIFE")
+write("HELLO WORLD")
+write("I AM PROGRAMMER")
