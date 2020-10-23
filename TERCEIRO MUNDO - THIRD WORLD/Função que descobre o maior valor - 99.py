@@ -6,9 +6,15 @@
 # e o maior numero entre eles
 from random import randint
 def fisrtNumber(*numbers):
+    from time import sleep
     print("="*50)
     print(f"Received values: {numbers}")
     print(f"Total values: {len(numbers)}")
+    if len(numbers) == 0:
+        print("The maximum value is 0")
+    else:
+        print(f"The maximum value is {max(numbers)}")
+    sleep(0.5)
 
 fisrtNumber(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
 fisrtNumber(randint(0,10),randint(0,10))
