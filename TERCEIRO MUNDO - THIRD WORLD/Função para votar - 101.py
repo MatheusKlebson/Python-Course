@@ -7,9 +7,15 @@ def vote(born_year):
     from datetime import date
     currentYear = date.today().year
     age = currentYear - born_year 
-    print(age)
+    print(f"The person have {age}, situation: ",end="")
+    if age >= 18 and age < 65:
+        return "Obrigatory"
+    elif age >= 16 and age < 18 or age >= 65:
+        return "Optional"
+    else:
+        return "Denied"
 
 
 print("="*50)
 bornYear = int(input("What is your year of birth? "))
-vote(bornYear)
+print(vote(bornYear))
