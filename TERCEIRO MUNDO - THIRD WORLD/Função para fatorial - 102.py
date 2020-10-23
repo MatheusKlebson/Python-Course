@@ -4,7 +4,7 @@
 def factorial(calculation,show):
     print("="*50)
     f = 1
-    for counter in (calculation,0,-1):
+    for counter in range(calculation,0,-1):
         if show == True:
             print(f"{counter}",end="")
             if counter > 1:
@@ -16,4 +16,15 @@ def factorial(calculation,show):
 
 
 print("="*50)
-nuumber = int(input("Write a number to calculate the factorial: "))
+number = int(input("Write a number to calculate the factorial: "))
+show = " "
+while show not in "YESNOT":
+    show = str(input("Show Factorial[YES/NOT]: ")).strip()[0:3]
+    if show.upper() == "YES":
+        show = True
+        break
+    if show.upper() == "NOT":
+        show = False
+        break
+
+print(f"FACTORIAL: {factorial(number,show)}")
