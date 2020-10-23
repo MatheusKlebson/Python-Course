@@ -1,15 +1,9 @@
 # Exercício Python 096: Faça um programa que tenha uma função chamada área(), 
 # que receba as dimensões de um terreno retangular (largura e comprimento) e mostre a área do terreno.
-def mostraLinha(txt):
-    print("=" * 50)
-    print("{:^50}".format(txt))
-    print("=" * 50)
 def area(largura,comprimento):
-    area = largura * comprimento
-    print(f"A dimensão da area {largura}X{comprimento} é de {area}m2")
+    a = largura * comprimento
+    print(f"A area que mede uma dimensão de {largura}x{comprimento} é de {a}m2 ")
 
-
-mostraLinha("COMPRIMENTO DA ÁREA")
-l = float(input("Largura: "))
-c = float(input("Comprimento: "))
-area(l,c)
+larg = float(input("Largura (m): "))
+com = float(input("Comprimento (m): "))
+area(larg,com)
