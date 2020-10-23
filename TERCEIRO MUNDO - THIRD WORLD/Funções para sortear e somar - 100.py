@@ -8,5 +8,16 @@ def randomNumbers():
         num = randint(1,10)
         numbers.append(num)
 
+
 def sumPairs():
+    soma = 0
+    for cont in range(0,5):
+        if numbers[cont] % 2 == 0:
+            soma += numbers[cont]
+    print(f"Numbers drawn: {numbers}")
+    print(f"Sum Pairs: {soma}")
+
+    
 numbers = []
+randomNumbers()
+sumPairs()
