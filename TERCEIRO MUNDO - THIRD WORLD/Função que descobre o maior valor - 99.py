@@ -1,21 +1,17 @@
 # Exercício Python 099: Faça um programa que tenha uma função chamada maior(), 
 # que receba vários parâmetros com valores inteiros. 
 # Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
+# mostre os valores recebidos
+# total de valores
+# e o maior numero entre eles
 from random import randint
-from time import sleep
-def maior(* num):
-    print("="*55)
-    print(f"Os valores recebido: {num}")
-    print(f"Total de valores recebidos: {len(num)}")
-    if len(num) == 0:
-        print("O maior valor: 0")
-    else:
-        print(f"O maior valor: {max(num)}")
-    sleep(0.5)
+def fisrtNumber(*num):
+    print("="*50)
+    print(f"Received values: {num}")
 
 
-maior(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
-maior(randint(0,10),randint(0,10))
-maior(randint(0,10),randint(0,10),randint(0,10))
-maior(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
-maior()
+fisrtNumber(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
+fisrtNumber(randint(0,10),randint(0,10))
+fisrtNumber(randint(0,10),randint(0,10),randint(0,10))
+fisrtNumber(randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
+fisrtNumber()
