@@ -2,6 +2,7 @@
 #  o primeiro que indique o número a calcular e outro chamado show, que será um valor lógico (opcional)
 #  indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
 def factorial(calculation,show):
+    print("="*50)
     f = 1
     for counter in (calculation,0,-1):
         if show == True:
@@ -10,5 +11,9 @@ def factorial(calculation,show):
                 print(" X ",end="")
             else:
                 print(" = ",end="")
+        f *= counter
+    return f
 
 
+print("="*50)
+nuumber = int(input("Write a number to calculate the factorial: "))
