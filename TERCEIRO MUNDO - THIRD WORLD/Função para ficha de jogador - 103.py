@@ -13,6 +13,10 @@ def write(text):
     print("="*size)
 
 write("PLAYER DATA")
-name = str(input('WRITE THE NAME OF THE PLAYER: '))
+name = str(input('WRITE THE NAME OF THE PLAYER: ')).title().strip()
 totgoal = str(input("WRITE THE TOTAL OF GOALS: "))
+if totgoal.isnumeric:
+    int(totgoal)
+else:
+    totgoal = 0
 passbook(name,totgoal)
