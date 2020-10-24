@@ -13,5 +13,8 @@ def readInt(message):
         else:
             print("ERROR!! YOU NOT WRITED A NUMBER")
     return n
+
+
+print("="*50)
 number = readInt("WRITE A NUMBER, PLEASE:")
 print(f"YOU WRITED THE NUMBER {number}, THANKS A LOT!!")
