@@ -2,8 +2,10 @@
 # que receba dois parâmetros opcionais: o nome de um jogador 
 # quantos gols ele marcou. O programa deverá ser capaz de mostrar a ficha do jogador, 
 # mesmo que algum dado não tenha sido informado corretamente.
-def passbook(playerName='<unknown>',goals=0): '''passbook = caderneta'''
-
+def passbook(playerName='<unknown>',goals=0): 
+    '''passbook = caderneta'''
+    print("="*50)
+    print(f"The Player {playerName} scored {goals} goals on competition ")
 
 
 def write(text):
@@ -12,11 +14,14 @@ def write(text):
     print(f"  {text}")
     print("="*size)
 
+
 write("PLAYER DATA")
 name = str(input('WRITE THE NAME OF THE PLAYER: ')).title().strip()
-totgoal = str(input("WRITE THE TOTAL OF GOALS: "))
-if totgoal.isnumeric:
-    int(totgoal)
+goal = str(input("WRITE THE TOTAL OF GOALS: "))
+if goal.isnumeric():
+    int(goal)
 else:
-    totgoal = 0
-passbook(name,totgoal)
+    goal = 0
+if name == "":
+    name = "<unknown>"
+passbook(name,goal)

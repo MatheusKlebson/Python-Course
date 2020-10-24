@@ -16,7 +16,7 @@ def factorial(calculation,show):
 
 
 print("="*50)
-number = int(input("Write a number to calculate the factorial: "))
+number = int(input("Write a number for to calculate the factorial: "))
 show = " "
 while show not in "YESNOT":
     show = str(input("Show Factorial[YES/NOT]: ")).strip()[0:3]
