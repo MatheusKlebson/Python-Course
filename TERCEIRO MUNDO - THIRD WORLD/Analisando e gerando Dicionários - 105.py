@@ -5,31 +5,30 @@
 – A menor nota                                                                                                                                                              
 – A média da turma                                                                                                                                                      
 – A situação (opcional)'''
-def notes(*n,situation=False):
-    '''
+def notes(*num):
+     '''
     FUNCTION FOR CALCULATING MANY NUMBERS:
-    def(*n,situation=False) 
+    def(*num,situation=False) 
     RECEIVES PARAMETERS
     (ACCEPT MANY NUMBERS) *n = numbers 
     (OPTIONAL PARAMETER) situation = medium situation
     RETURN DICTIONARY
     '''
-    notebook = dict()
-    notebook["NotesTotal"] = len(n)
-    notebook["FisrtNote"] = max(n)
-    notebook["LastNote"] = min(n)
-    notebook["Medium"] = sum(n)/len(n)
-    if situation == True:
-        if notebook["Medium"] >= 7 and notebook["Medium"] <= 10:
-            notebook["Situation"] = "Very Good"
-        elif notebook["Medium"] >= 5 and notebook["Medium"] < 7:
-            notebook["Situation"] = "Reasonable"
-        elif notebook["Medium"] >= 0 and notebook["Medium"] < 5:
-            notebook["Situation"] = "Very bad"
-        else:
-             notebook["Situation"] = "Medium invalid"
-    return notebook
+    dictionary = dict()
+    dictionary["NOTES_TOTAL"] = len(num)
+    dictionary["MAXIMUM_NOTE"] = max(num)
+    dictionary["MINIMUM_NOTE"] = min(num)
+    dictionary["CLASS_AVERAGE"] = sum(num)/len(num)
+    if dictionary["CLASS_AVERAGE"] >= 7 and dictionary["CLASS_AVERAGE"] <= 10:
+        dictionary["SITUATION"] = "Very Good"
+    elif dictionary["CLASS_AVERAGE"] >= 5 and dictionary["CLASS_AVERAGE"] < 7:
+        dictionary["SITUATIOM"] = "Reasonable"
+    elif dictionary["CLASS_AVERAGE"] >= 0 and dictionary["CLASS_AVERAGE"] < 5:
+        dictionary["SITUATIOM"] = "Very Bad"
+    else:
+        dictionary["SITUATIOM"] = "Medium Invalid"
+    return dictionary
 
 
-response = notes(10,8,7,situation=True)
-print(response)
+
+
