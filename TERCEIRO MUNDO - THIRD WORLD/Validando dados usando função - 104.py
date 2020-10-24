@@ -7,8 +7,11 @@ def readInt(message):
     while True:
         n = str(input(message))
         if n.isnumeric():
+            int(n)
             okay = True
+            break
         else:
             print("ERROR!! YOU NOT WRITED A NUMBER")
+    return n
 number = readInt("WRITE A NUMBER, PLEASE:")
 print(f"YOU WRITED THE NUMBER {number}, THANKS A LOT!!")
