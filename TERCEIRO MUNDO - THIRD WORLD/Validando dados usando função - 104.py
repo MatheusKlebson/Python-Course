@@ -5,17 +5,10 @@
 def readInt(message):
     okay = False
     while True:
-        number = str(input(message))
-        if number.isnumeric():
-            value = number
-            okay = True 
+        n = str(input(message))
+        if n.isnumeric():
+            okay = True
         else:
             print("ERROR!! YOU NOT WRITED A NUMBER")
-        if okay == True:
-            break
-    return value
-
-    
-print("=" * 50)
-number = readInt("Write a number: ")
-print(f"You writed a number {number}, Thanks!!")
+number = readInt("WRITE A NUMBER, PLEASE:")
+print(f"YOU WRITED THE NUMBER {number}, THANKS A LOT!!")
