@@ -3,8 +3,8 @@
 # como um valor monetário formatado.
 
 
-from Moeda import increase,decrease,double,half
+from ex108 import Moeda
 price_product = float(input("HOW MUCH THE PRODUCT COSTS?U$"))
-print(f"The double is {moeda(double(price_product))}")
-print(f"The half is {moeda(half(price_product))}")
-print(f"The increase from 10% is {moeda(increase(price_product,10))}")
+print(f"The double is {moeda.Moeda(Moeda.double(price_product))}")
+print(f"The half is {moeda.Moeda(Moeda.half(price_product))}")
+print(f"The increase from 10% is {moeda.Moeda(Moeda.increase(price_product,10))}")
