@@ -1,6 +1,6 @@
 def diminuir(preço=0,taxa=0,formato=False):
     resp = preço - (preço*taxa/100)
-    return resp
+    return resp 
 
 
 def aumentar(preço=0,taxa=0,formato=False):
