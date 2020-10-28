@@ -33,11 +33,3 @@ def dobro(preço=0,formato=False):
     
 def moeda(preço=0,moeda="R$",formato=False):
     return f"{moeda}{preço:.2f}".replace(".",",")
-
-def resumo(preço=0,taxamais=0,taxamenos=0):
-    print("="*50)
-    print("{:^50}".format("ANALISANDO O VALOR"))
-    print("="*50)
-    '''print(f"A metade de {moeda.moeda(preço)} é {moeda.metade(preço,False)}")
-    print(f"O dobro de {moeda.moeda(preço)} é {moeda.dobro(preço,True)}")
-    print(f"O aumento de 10%, fica {moeda.aumentar(preço,10,True)}")'''
