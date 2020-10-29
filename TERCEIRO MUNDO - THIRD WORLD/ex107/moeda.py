@@ -4,22 +4,22 @@
 # Faça também um programa que importe esse módulo e use algumas dessas funções.
 
 
-def dicrease(price=0,rate=0):
-    response = price - (price*rate/100)
-    return response
+def diminuir(preço=0,taxa=0):
+    resp = preço - (preço*taxa/100)
+    return resp
 
 
-def increase(price=0,rate=0):
-    response = price + (price*rate/100)
-    return response
+def aumentar(preço=0,taxa=0):
+    resp = preço + (preço*taxa/100)
+    return resp
 
 
-def metade(price=0):
-    response = price / 2
-    return response
+def metade(preço=0):
+    resp = preço / 2
+    return resp
 
 
-def dobro(price=0):
-    response = price * 2
-    return response
+def dobro(preço=0):
+    resp = preço * 2
+    return resp
     
