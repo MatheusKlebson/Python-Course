@@ -24,10 +24,11 @@ def moeda(preço=0,moeda="R$"):
 
 def resumo(preço=0,taxaa=10,taxad=5):
     print("="*35)
-    print("{:^35}".format("RESUMO DO VALOR"))
+    print("RESUMO DO VALOR".center(35))
     print("="*35)
     print(f"Preço analisado:\t{moeda(preço)}")
     print(f"Dobro do preço:\t\t{dobro(preço,True)}")
     print(f"Metade do preço:\t{metade(preço,True)}")
-    print(f"Redução de {taxad}%:\t\t{diminuir(preço,taxad,True)}")
     print(f"Aumento de {taxaa}%:\t\t{aumentar(preço,taxaa,True)}")
+    print(f"Redução de {taxad}%:\t\t{diminuir(preço,taxad,True)}")
+    print("="*35)
