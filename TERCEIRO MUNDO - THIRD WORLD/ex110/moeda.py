@@ -26,3 +26,6 @@ def resumo(preço=0,taxaa=10,taxad=5):
     print("="*30)
     print("{:^30}".format("RESUMO DO VALOR"))
     print("="*30)
+    print(f"Preço analisado:\t{moeda(preço)}")
+    print(f"Dobro do preço:\t{dobro(preço,True)}")
+    print(f"Metade do preço:\t{metade(preço,True)}")
