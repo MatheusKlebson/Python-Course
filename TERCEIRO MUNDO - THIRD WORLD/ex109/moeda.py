@@ -1,21 +1,21 @@
 def diminuir(preço=0,taxa=0,formato=False):
     resp = preço - (preço*taxa/100)
-    return resp if not formato False else moeda(resp)
+    return resp if not formato else moeda(resp)
 
 
 def aumentar(preço=0,taxa=0,formato=False):
     resp = preço + (preço*taxa/100)
-    return resp if not formato False else moeda(resp)
+    return resp if not formato else moeda(resp)
 
 
 def metade(preço=0,formato=False):
     resp = preço / 2
-    return resp if not formato False else moeda(resp)
+    return resp if not formato else moeda(resp)
 
 
 def dobro(preço=0,formato=False):
     resp = preço * 2
-    return resp if not formato False else moeda(resp)
+    return resp if not formato else moeda(resp)
 
 
 def moeda(preço=0,moeda="R$"):
