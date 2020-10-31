@@ -11,3 +11,5 @@ def leiaDinheiro(msg):
             validar = True
         if validar == True:
             break
+        else:
+            print(f"ERRO!! \"{preço}\" não é um valor")
