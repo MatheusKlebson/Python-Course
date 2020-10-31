@@ -3,4 +3,11 @@ no desafio 111, temos um módulo chamado dado. Crie uma função chamada leiaDin
 que seja capaz de funcionar como a função input(),
 mas com uma validação de dados para aceitar apenas valores que seja monetários.'''
 def leiaDinheiro(msg):
-    preço = str(input(msg))
+    validar = False
+    while validar == False:
+        preço = str(input(msg)).strip()
+        if preço.isnumeric():
+            float(preço)
+            validar = True
+        if validar == True:
+            break
