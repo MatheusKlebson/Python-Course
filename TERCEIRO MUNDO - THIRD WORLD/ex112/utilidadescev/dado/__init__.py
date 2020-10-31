@@ -6,10 +6,20 @@ def leiaDinheiro(msg):
     validar = False
     while validar == False:
         preço = str(input(msg)).strip().replace(",",".")
-        if preço.isnumeric():
-            float(preço)
+        if preço.isalpha() or preço == "":
+            print(f"ERRO!! \"{preço}\" não é um valor")
+        else:
             validar = True
-        if validar == True:
+            return float(preço)
+        
+def readInt(message):
+    okay = False
+    while True:
+        n = str(input(message))
+        if n.isnumeric():
+            int(n)
+            okay = True
             break
         else:
-            print(f"ERRO!! \"{preço}\" não é um valor")
+            print("ERROR!! YOU NOT WRITED A NUMBER")
+    return n

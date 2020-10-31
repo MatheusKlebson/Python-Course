@@ -1,4 +1,4 @@
 import utilidadescev
 
-utilidadescev.dado.leiaDinheiro("Preço do produto?R$")
-#utilidadescev.moeda.resumo(p,10,5)
+p = utilidadescev.dado.leiaDinheiro("Digite um preço:R$")
+utilidadescev.moeda.resumo(p,10,5)
