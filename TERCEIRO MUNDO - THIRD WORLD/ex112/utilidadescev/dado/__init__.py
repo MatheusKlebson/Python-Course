@@ -5,7 +5,7 @@ mas com uma validação de dados para aceitar apenas valores que seja monetário
 def leiaDinheiro(msg):
     validar = False
     while validar == False:
-        preço = str(input(msg)).strip()
+        preço = str(input(msg)).strip().replace(",",".")
         if preço.isnumeric():
             float(preço)
             validar = True
