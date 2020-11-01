@@ -5,5 +5,6 @@ import validação
 
 num_int = validação.leiaInt("Digite um número inteiro: ")
 num_real = validação.leiaFloat("Digite um número real: ")
+print("="*30)
 print(f"O número Inteiro: {num_int}")
 print(f"O número real: {num_real}")
