@@ -2,17 +2,18 @@
 incluindo agora a possibilidade da digitação de um número de tipo inválido.
 Aproveite e crie também uma função leiaFloat() com a mesma funcionalidade.'''
 def leiaInt(mensagem):
-    ok = False
-    while ok == False:
+    while True:
         try:
             num = int(input(mensagem))
         except (ValueError,TypeError):
-            print(f"ERRO!!! escreva um número inteiro...")
+            print("ERRO!! Por favor digite um valor inteiro...")
+        except (KeyboardInterrupt):
+            print("O usuário interropeu o programa, o valor será nulo.")
+            return 0
+            break
         else:
-            ok = True
             return num
-            if ok == True:
-                break
+            break
 
-n1 = leiaInt("Digite um número inteiro: ")
-#n2 = leiaFloat("Digite um número real:")
+num_int = leiaInt("Digite um número inteiro: ")
+print(f"O número inteiro: {num_int}")
