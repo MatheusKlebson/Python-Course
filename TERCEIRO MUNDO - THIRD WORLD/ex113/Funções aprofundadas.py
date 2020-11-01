@@ -4,6 +4,4 @@ Aproveite e crie também uma função leiaFloat() com a mesma funcionalidade.'''
 import validação
 
 num_int = validação.leiaInt("Digite um número inteiro: ")
-num_real = leiaFloat("Digite um número real: ")
 print(f"O número Inteiro: {num_int}")
-print(f"O número Real: {num_real}")
