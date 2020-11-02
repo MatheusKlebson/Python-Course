@@ -7,7 +7,6 @@ def leiaInt(mensagem):
         except (KeyboardInterrupt):
             print("O usuário interropeu o programa, o valor será nulo.")
             return 0
-            break
         else:
             return num
             break
@@ -22,7 +21,6 @@ def leiaFloat(mensagem):
         except (KeyboardInterrupt):
             print("O usuário interropeu o programa, o valor será nulo.")
             return 0
-            break
         else:
             return num
             break
