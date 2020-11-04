@@ -1,3 +1,14 @@
 from lib.interface import *
 
-resposta = menu(["CRIAR ARQUIVO","EXCLUIR PESSOA","CADASTRAR PESSOAS","SAIR DO SISTEMA"])
+while True:
+    resposta = menu(["VER PESSOAS CADASTRADAS","CADASTRAR PESSOAS","SAIR DO SISTEMA"])
+    if resposta == 1:
+        print(linha())
+        print("Vendo pessoas")
+        print(linha())
+    elif resposta == 2:
+
+    elif resposta == 3:
+
+    else:
+        
