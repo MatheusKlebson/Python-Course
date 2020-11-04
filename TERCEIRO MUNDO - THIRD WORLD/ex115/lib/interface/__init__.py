@@ -1,8 +1,14 @@
 def linha(tam=45):
-    return "="* tam
+    return "=" * tam
 
 
 def cabeçalho(txt):
-    linha()
+    print(linha())
     print(txt.center(45))
-    linha()
+    print(linha())
+
+
+def menu(lista):
+    for i,opções in enumerate(lista):
+        print(f"{i + 1} - {opções}")
+    print(linha())
