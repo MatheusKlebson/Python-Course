@@ -9,6 +9,7 @@ def cabeçalho(txt):
 
 
 def menu(lista):
+    cabeçalho("MENU DO SISTEMA")
     for i,opções in enumerate(lista):
         print(f"{i + 1} - {opções}")
     print(linha())
