@@ -1,5 +1,7 @@
-def arquivoExite(nome):
+def arquivoExiste(nome):
     try:
         a = open(nome, "rt")
         a.close()
-    except
+        return True
+    except FileExistsError:
+        return False
