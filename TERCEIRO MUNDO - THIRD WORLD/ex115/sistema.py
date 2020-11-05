@@ -4,9 +4,7 @@ from time import sleep
 
 arq = "cursoemvideo.txt"
 
-if arquivoExiste(arq):
-    print(f"Arquivo {arq} encontrado")
-else:
+if not arquivoExiste(arq):
     criarArquivo("cursoemvideo.txt")
 
 while True:
