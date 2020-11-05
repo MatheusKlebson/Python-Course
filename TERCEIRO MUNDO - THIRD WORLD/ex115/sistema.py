@@ -1,5 +1,5 @@
 from lib.interface import *
-from arquivo import *
+from lib.arquivo import *
 from time import sleep
 
 arq = "cursoemvideo.txt"
