@@ -34,9 +34,9 @@ Nota no teste final: 100% de aproveitamento
 Módulos
 - [x] 1 - Tuplas em Python
 - [x] 2 - Listas em Python
-- [ ] 3 - Dicionários em Python
-- [ ] 4 - Funções em Python
-- [ ] 5 - Modularização em Python
+- [x] 3 - Dicionários em Python
+- [x] 4 - Funções em Python
+- [x] 5 - Modularização em Python
 - [ ] 6 - Tratamento de Erros em Python
 
 Nota no teste final: Ainda não foi feito
@@ -68,9 +68,9 @@ Final test score: 100% success rate
  - [ ] World 3 (Composite structures) Modules
  - [x] 1 - Tuples in Python
  - [x] 2 - Python Lists
- - [ ] 3 - Python dictionaries
- - [ ] 4 - Python Functions
- - [ ] 5 - Modularization in Python
+ - [x] 3 - Python dictionaries
+ - [x] 4 - Python Functions
+ - [x] 5 - Modularization in Python
  - [ ] 6 - Python Error Handling
 
 Final test note: Not yet done
