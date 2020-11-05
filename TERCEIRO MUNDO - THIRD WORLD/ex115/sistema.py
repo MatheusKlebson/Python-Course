@@ -1,6 +1,10 @@
 from lib.interface import *
+from arquivo import *
 from time import sleep
 
+arq = "cursoemvideo.txt"
+
+if 
 while True:
     resposta = menu(["VER PESSOAS CADASTRADAS","CADASTRAR PESSOAS","SAIR DO SISTEMA"])
     if resposta == 1:
