@@ -6,3 +6,11 @@ def arquivoExiste(nome):
         return False
     else:
         return True
+    
+
+def criarArquivo(nome):
+    try:
+        a = open(nome, "wt+")
+        a.close()
+    except:
+        
