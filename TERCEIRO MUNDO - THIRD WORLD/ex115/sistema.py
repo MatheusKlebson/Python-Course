@@ -2,12 +2,10 @@ from lib.interface import *
 from lib.arquivo import *
 from time import sleep
 
-arq = "cursoemvideo.txt"
+arq = "dadosPessoas - ex115.txt"
 
-if arquivoExiste(arq):
-    print(f"Arquivo {arq} encontrado com sucesso")
-else:
-    criarArquivo("cursoemvideo.txt")
+if not arquivoExiste(arq):
+    criarArquivo("dadosPessoas - ex115.txt")
 
 while True:
     resposta = menu(["VER PESSOAS CADASTRADAS","CADASTRAR PESSOAS","SAIR DO SISTEMA"])
