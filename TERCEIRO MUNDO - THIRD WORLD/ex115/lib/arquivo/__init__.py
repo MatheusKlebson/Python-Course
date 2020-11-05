@@ -13,4 +13,6 @@ def criarArquivo(nome):
         a = open(nome, "wt+")
         a.close()
     except:
-        
+        print("ERRO. ARQUIVO NÃO PODE SER CRIADO")
+    else:
+        print(f"Arquivo {nome} foi criado com sucesso")
