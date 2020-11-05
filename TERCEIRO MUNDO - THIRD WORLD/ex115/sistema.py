@@ -4,13 +4,15 @@ from time import sleep
 
 arq = "cursoemvideo.txt"
 
-if not arquivoExiste(arq):
+if arquivoExiste(arq):
+    print(f"Arquivo {arq} encontrado com sucesso")
+else:
     criarArquivo("cursoemvideo.txt")
 
 while True:
     resposta = menu(["VER PESSOAS CADASTRADAS","CADASTRAR PESSOAS","SAIR DO SISTEMA"])
     if resposta == 1:
-        cabeçalho("Vendo pessoas")
+        lerArquivo(arq)
     elif resposta == 2:
         cabeçalho("Cadastrando")
     elif resposta == 3:
