@@ -27,7 +27,10 @@ def lerArquivo(nome):
         print("Erro ao ler arquivo.")
     else:
         cabeçalho('Vendo pessoas cadastradas')
-        print(a.read())
+        for linha in a:
+            dado = linha.split(";")
+            dado[1] = dado[1].replace("\n","")
+            print(f"{dado[0]}{dado[1]}")
     finally:
         a.close()
 
@@ -39,7 +42,7 @@ def cadastrar(arq,nome="desconhecido",idade=0):
         print("Ocorreu um ERRO ao tentar abrir o arquivo")
     else:
         try:
-            print(f"{nome};{idade}")
+           a.write(f"{nome};{idade}\n")
         except:
             print("Ocorreu um ERRO ao adicionar os dados")
         else:
