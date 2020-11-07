@@ -37,3 +37,9 @@ def cadastrar(arq,nome="desconhecido",idade=0):
         a = open(arq, 'at')
     except:
         print("Ocorreu um ERRO ao tentar abrir o arquivo")
+    else:
+        try:
+            print(f"{nome};{idade}")
+        except:
+            print("Ocorreu um ERRO ao adicionar os dados")
+
