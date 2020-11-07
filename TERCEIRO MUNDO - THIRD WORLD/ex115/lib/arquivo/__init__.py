@@ -28,3 +28,7 @@ def lerArquivo(nome):
     else:
         cabeçalho('Vendo pessoas cadastradas')
         print(a.read())
+
+
+def cadastrar(arq,nome="desconhecido",idade=0):
+    
