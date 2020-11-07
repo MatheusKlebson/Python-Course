@@ -28,7 +28,12 @@ def lerArquivo(nome):
     else:
         cabeçalho('Vendo pessoas cadastradas')
         print(a.read())
+    finally:
+        a.close()
 
 
 def cadastrar(arq,nome="desconhecido",idade=0):
-    
+    try:
+        a = open(arq, 'at')
+    except:
+        print("Ocorreu um ERRO ao tentar abrir o arquivo")
