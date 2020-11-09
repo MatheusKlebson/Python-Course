@@ -30,16 +30,16 @@ Módulos
 Nota no teste final: 100% de aproveitamento
 
 =================================
-- [ ] Mundo 3 (Estruturas compostas)
+- [x] Mundo 3 (Estruturas compostas)
 Módulos
 - [x] 1 - Tuplas em Python
 - [x] 2 - Listas em Python
 - [x] 3 - Dicionários em Python
 - [x] 4 - Funções em Python
 - [x] 5 - Modularização em Python
-- [ ] 6 - Tratamento de Erros em Python
+- [x] 6 - Tratamento de Erros em Python
 
-Nota no teste final: Ainda não foi feito
+Nota no teste final: 90% de aproveitamento
 
 ---
 PYTHON COURSE STEPS
@@ -65,12 +65,12 @@ Final test score: 100% success rate
 
 =======================================
 
- - [ ] World 3 (Composite structures) Modules
+ - [x] World 3 (Composite structures) Modules
  - [x] 1 - Tuples in Python
  - [x] 2 - Python Lists
  - [x] 3 - Python dictionaries
  - [x] 4 - Python Functions
  - [x] 5 - Modularization in Python
- - [ ] 6 - Python Error Handling
+ - [x] 6 - Python Error Handling
 
-Final test note: Not yet done
+Final test note: 90% success rate
